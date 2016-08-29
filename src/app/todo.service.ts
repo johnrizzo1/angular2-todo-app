@@ -36,6 +36,11 @@ export class TodoService {
         return this.todos;
     }
 
+    getRemainingTodos(): Todo[] {
+        return this.todos
+            .filter(todo => todo.complete !== true);
+    }
+
     getTodoById(id: number): Todo {
         return this.todos
             .filter(todo => todo.id === id)
