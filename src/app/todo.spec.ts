@@ -1,5 +1,4 @@
 /* tslint:disable:no-unused-variable */
-
 import {
     addProviders,
     async, inject,
@@ -13,7 +12,7 @@ describe('Todo', () => {
     it('should create an instance', () => {
         expect(new Todo()).toBeTruthy();
     });
-    
+
     it('should accept values in the constructor', () => {
         let todo = new Todo({
             title: 'hello',

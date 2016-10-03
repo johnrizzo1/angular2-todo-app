@@ -14,10 +14,9 @@ import { TodoService } from '../todo.service';
 describe('Component: TodoApp', () => {
   beforeEachProviders(() => [TodoService]);
 
-  it('should create an instance', () => {
-      inject([TodoAppComponent], (component: TodoAppComponent) => {
+  it('should create an instance', inject([TodoService], (todoService: TodoService) => {
+          let component = new TodoAppComponent(todoService);
           expect(component).toBeTruthy();
-      })
-    //let component = new TodoAppComponent();
-  });
+          expect(component).toBeTruthy();
+  }));
 });

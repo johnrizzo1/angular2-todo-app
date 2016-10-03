@@ -4,7 +4,6 @@ import { Todo } from './todo';
 @Injectable()
 export class TodoService {
     lastId: number = 0;
-
     todos: Todo[] = [];
 
     constructor() { }

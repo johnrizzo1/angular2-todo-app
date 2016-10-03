@@ -1,4 +1,4 @@
-export class Angular2TodoAppPage {
+export class TodoPage {
   navigateTo() {
     return browser.get('/');
   }
